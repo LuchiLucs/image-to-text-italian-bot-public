@@ -11,6 +11,8 @@ RUN pip install -r requirements.txt
 # Copy function code
 COPY .env ${LAMBDA_TASK_ROOT}
 COPY lambda_main.py ${LAMBDA_TASK_ROOT}
+COPY configs/ ${LAMBDA_TASK_ROOT}/configs/
+COPY core/ ${LAMBDA_TASK_ROOT}/core/
 
 # avoid writing bytecode files during runtime
 # (due to docker storage being temp)
