@@ -16,7 +16,7 @@ logger.info(f"Loading .env file from: {_env_path}")
 
 # Get tokens from environment variables
 TELEGRAM_TOKEN = os.environ.get(
-    "TEST_TELEGRAM_TOKEN"
+    "TELEGRAM_TOKEN"
 )  # TELEGRAM_TOKEN | TEST_TELEGRAM_TOKEN
 if TELEGRAM_TOKEN is None:
     raise ValueError("TELEGRAM_TOKEN or TEST_TELEGRAM_TOKEN must be set in .env file")
