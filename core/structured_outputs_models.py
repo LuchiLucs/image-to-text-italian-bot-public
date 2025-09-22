@@ -8,13 +8,12 @@ class DescrizioneAccessibile(BaseModel):
     2) Azione: descrive l'ambiente circostante, lo sfondo o il setting dell'immagine
     3) Contesto: descrive l'ambiente circostante, lo sfondo o il setting dell'immagine
     4) Testo: descrive eventualmente il testo se presente nell'immagine, riportato fedelmente
-    5) Significato: descrive eventualmente significati o dettagli visivi importanti per la comprensione che potrebbero non essere ovvi come ad esempio i) simboli politici o religiosi, ii) espressioni e tradizioni culturali, e iii) meme
 
     """
 
     descrizione: str = Field(
         ...,
-        description="Una descrizione completa che integra Oggetto, Azione, Contesto, ed eventualmente anche Testo e/o Significato aggiuntivi presenti nell'immagine",
+        description="Una descrizione completa che integra Oggetto, Azione, Contesto, ed eventualmente anche Testo se presenti nell'immagine",
     )
 
     def __str__(self) -> str:
