@@ -1,7 +1,7 @@
 from langchain_openai import AzureChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 import logging
-from config.loader import AZURE_OPENAI_API_KEY
+from configs.loader import AZURE_OPENAI_API_KEY
 from core.structured_outputs_models import (
     RispostaAccessibileFinale,
     EventoAccessibile,
