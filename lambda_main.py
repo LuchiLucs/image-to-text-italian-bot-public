@@ -4,7 +4,7 @@ from telegram import Update, BotCommand
 from telegram.ext import Application, MessageHandler, CommandHandler, filters
 from telegram._utils.types import JSONDict
 
-from config.loader import TELEGRAM_TOKEN, ALLOWED_GROUP_IDS, BOT_PRIVACY_MODE_ON
+from configs.loader import TELEGRAM_TOKEN, ALLOWED_GROUP_IDS, BOT_PRIVACY_MODE_ON
 from core.bot_callbacks import process_image_message
 from core.bot_enums import BotCommandsEnum
 
